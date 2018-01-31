@@ -1,0 +1,13 @@
+
+import org.slf4j.LoggerFactory
+
+class Script {
+  def run() = {
+    val logger = LoggerFactory.getLogger(this.getClass)
+    logger.info("Hello testing logger library")
+    println("abc")
+  }
+}
+
+
+scala.reflect.classTag[Script].runtimeClass
